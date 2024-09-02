@@ -1,0 +1,22 @@
+.neon-cursor-container {
+  position: relative; /* Ensure child elements are positioned relative to this container */
+  overflow: hidden;   /* Prevent the line from extending beyond the container */
+  cursor: none;       /* Hide the default cursor */
+}
+
+.neon-line {
+  position: absolute;    /* Position neon line relative to the container */
+  width: 4px;            /* Line width */
+  height: 4px;           /* Line height */
+  background-color: #00ff00; /* Neon green color */
+  border-radius: 50%;    /* Rounded ends to make it smooth */
+  pointer-events: none;  /* The line should not interfere with other UI interactions */
+  z-index: 2000;
+  transition: transform 0.03s ease-out, opacity 0.1s ease-out; /* Smooth following and fading */
+  box-shadow: 
+    0 0 5px #00ff00,     /* Inner glow */
+    0 0 10px #00ff00,    /* Outer glow */
+    0 0 20px #00ff00,    /* Brighter outer glow */
+    0 0 40px #00ff00;    /* Even brighter and larger outer glow */
+  cursor: none;          /* Hide the default cursor */
+}

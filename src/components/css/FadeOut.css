@@ -1,0 +1,14 @@
+/* Fade Out */
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
+
+.fade-out {
+    animation: fadeOut 2s ease-out;
+    animation-fill-mode: forwards;
+}

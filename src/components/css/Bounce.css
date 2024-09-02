@@ -1,0 +1,63 @@
+/* Keyframes for Bounce Animations */
+
+/* Bounce Up */
+@keyframes bounce-up {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(calc(-1 * var(--bounce-distance))); 
+    }
+}
+
+/* Bounce Down */
+@keyframes bounce-down {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(var(--bounce-distance)); 
+    }
+}
+
+/* Bounce Left */
+@keyframes bounce-left {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(calc(-1 * var(--bounce-distance))); 
+    }
+}
+
+/* Bounce Right */
+@keyframes bounce-right {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(var(--bounce-distance)); 
+    }
+}
+
+/* Bounce Class */
+.bounce {
+    animation-timing-function: ease-in-out;
+}
+
+/* Specific Bounce Direction Classes */
+.bounce-up {
+    animation-name: bounce-up;
+}
+
+.bounce-down {
+    animation-name: bounce-down;
+}
+
+.bounce-left {
+    animation-name: bounce-left; 
+}
+
+.bounce-right {
+    animation-name: bounce-right; 
+}

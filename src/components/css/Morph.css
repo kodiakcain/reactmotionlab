@@ -1,0 +1,63 @@
+@keyframes morph-square-circle {
+  from {
+      width: var(--width);
+      height: var(--height);
+      background-color: #3498db;
+  }
+  to {
+      width: var(--width);
+      height: var(--height);
+      background-color: #e74c3c;
+      border-radius: calc(var(--width)/2);
+  }
+}
+
+@keyframes morph-circle-square {
+  from {
+    width: var(--width);
+    height: var(--height);
+    background-color: #e74c3c;
+    border-radius: calc(var(--width)/2);
+  }
+  to {
+    width: var(--width);
+    height: var(--height);
+    background-color: #3498db;
+  }
+}
+
+@keyframes morph-circle-triangle {
+  0% {
+    width: var(--width);
+    height: var(--height);
+    background-color: #e74c3c;
+    border-radius: calc(var(--width)/2);
+  }
+  100% {
+    width: 0;
+    height: 0;
+    border-left: calc(var(--width)/2) solid transparent;
+    border-right: calc(var(--width)/2) solid transparent;
+    border-bottom: var(--width) solid #3498db;
+    border-radius: 0;
+  }
+}
+
+@keyframes morph-triangle-circle {
+  0% {
+    width: 0;
+    height: 0;
+    border-left: calc(var(--width)/2) solid transparent;
+    border-right: calc(var(--width)/2) solid transparent;
+    border-bottom: var(--width) solid #3498db;
+    border-radius: 0;
+  }
+  100% {
+    width: var(--width);
+    height: var(--height);
+    background-color: #e74c3c;
+    border-radius: calc(var(--width)/2);
+  }
+}
+
+

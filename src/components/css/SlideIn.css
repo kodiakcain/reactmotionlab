@@ -1,0 +1,72 @@
+/* Keyframes for Slide In Animations */
+
+/* Slide In from Left */
+@keyframes slideIn-left {
+    from {
+      transform: translateX(var(--slide-distance, -100%));
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Slide In from Right */
+  @keyframes slideIn-right {
+    from {
+      transform: translateX(var(--slide-distance, 100%));
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Slide In from Top */
+  @keyframes slideIn-top {
+    from {
+      transform: translateY(var(--slide-distance, -100%));
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Slide In from Bottom */
+  @keyframes slideIn-bottom {
+    from {
+      transform: translateY(var(--slide-distance, 100%));
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Slide In Class */
+  .slide-in {
+    animation-fill-mode: forwards;
+  }
+  
+  /* Specific Slide In Direction Classes */
+  .slide-in-left {
+    animation-name: slideIn-left;
+  }
+  
+  .slide-in-right {
+    animation-name: slideIn-right;
+  }
+  
+  .slide-in-top {
+    animation-name: slideIn-top;
+  }
+  
+  .slide-in-bottom {
+    animation-name: slideIn-bottom;
+  }
+  

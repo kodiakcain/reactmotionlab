@@ -1,0 +1,46 @@
+@keyframes rotatex {
+
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(var(--rotate-angle, 360deg));
+    }
+    
+}
+
+@keyframes rotatey {
+
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(var(--rotate-angle, 360deg));
+    }
+    
+}
+
+@keyframes rotatez {
+
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(var(--rotate-angle, 360deg));
+    }
+}
+
+.rotate-x {
+    animation-name: rotatex;
+    animation-fill-mode: forwards;
+}
+
+.rotate-y {
+    animation-name: rotatey;
+    animation-fill-mode: forwards;
+}
+
+.rotate-z {
+    animation-name: rotatez;
+    animation-fill-mode: forwards;
+}

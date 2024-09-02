@@ -1,0 +1,82 @@
+@keyframes swing {
+    0% {
+        transform: rotateZ(0deg);
+      }
+      4.5% {
+        transform: rotateZ(-5deg);
+      }
+      9% {
+        transform: rotateZ(-10deg);
+      }
+      13.5% {
+        transform: rotateZ(-15deg);
+      }
+      18% {
+        transform: rotateZ(-20deg);
+      }
+      22.5% {
+        transform: rotateZ(-25deg);
+      }
+      27% {
+        transform: rotateZ(-30deg);
+      }
+      31.5% {
+        transform: rotateZ(-25deg);
+      }
+      36% {
+        transform: rotateZ(-20deg);
+      }
+      40.5% {
+        transform: rotateZ(-15deg);
+      }
+      45% {
+        transform: rotateZ(-10deg);
+      }
+      49.5% {
+        transform: rotateZ(-5deg);
+      }
+      50% {
+        transform: rotateZ(0deg);
+      }
+      54.5% {
+        transform: rotateZ(5deg);
+      }
+      59% {
+        transform: rotateZ(10deg);
+      }
+      63.5% {
+        transform: rotateZ(15deg);
+      }
+      68% {
+        transform: rotateZ(20deg);
+      }
+      72.5% {
+        transform: rotateZ(25deg);
+      }
+      77% {
+        transform: rotateZ(30deg);
+      }
+      81.5% {
+        transform: rotateZ(25deg);
+      }
+      86% {
+        transform: rotateZ(20deg);
+      }
+      90.5% {
+        transform: rotateZ(15deg);
+      }
+      95% {
+        transform: rotateZ(10deg);
+      }
+      99.5% {
+        transform: rotateZ(5deg);
+      }
+      100% {
+        transform: rotateZ(0deg);
+      }
+}
+
+.swing {
+    animation-name: swing;
+    transform-origin: top center;
+}

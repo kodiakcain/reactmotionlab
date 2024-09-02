@@ -1,0 +1,22 @@
+.wave-text {
+  display: inline-block;
+  white-space: nowrap;
+  font-family: 'Arial', sans-serif;
+}
+
+.wave-text span {
+  display: inline-block;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-name: wave;
+}
+
+@keyframes wave {
+  0%, 60%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-20px);
+  }
+}
+

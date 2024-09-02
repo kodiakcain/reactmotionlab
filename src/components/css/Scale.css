@@ -1,0 +1,59 @@
+@keyframes scalenone {
+
+    from {
+        transform: scale(1);
+    } to {
+        transform: scale(var(--scale-factor));
+    }
+    
+}
+
+@keyframes scalex {
+
+    from {
+        transform: scaleX(1);
+    } to {
+        transform: scaleX(var(--scale-factor));
+    }
+    
+}
+
+@keyframes scaley {
+
+    from {
+        transform: scaleY(1);
+    } to {
+        transform: scaleY(var(--scale-factor));
+    }
+    
+}
+
+@keyframes scalez {
+
+    from {
+        transform: scaleZ(1);
+    } to {
+        transform: scaleZ(var(--scale-factor));
+    }
+    
+}
+
+.scale-none {
+    animation-name: scalenone;
+    animation-fill-mode: forwards;
+}
+
+.scale-x {
+    animation-name: scalex;
+    animation-fill-mode: forwards;
+}
+
+.scale-y {
+    animation-name: scaley;
+    animation-fill-mode: forwards;
+}
+
+.scale-z {
+    animation-name: scalez;
+    animation-fill-mode: forwards;
+}

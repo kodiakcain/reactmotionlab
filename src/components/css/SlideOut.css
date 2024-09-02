@@ -1,0 +1,72 @@
+/* Keyframes for Slide Out Animations */
+
+/* Slide Out to Left */
+@keyframes slideOut-left {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(var(--slide-distance, -100%));
+      opacity: 0;
+    }
+  }
+  
+  /* Slide Out to Right */
+  @keyframes slideOut-right {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(var(--slide-distance, 100%));
+      opacity: 0;
+    }
+  }
+  
+  /* Slide Out to Top */
+  @keyframes slideOut-top {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(var(--slide-distance, -100%));
+      opacity: 0;
+    }
+  }
+  
+  /* Slide Out to Bottom */
+  @keyframes slideOut-bottom {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(var(--slide-distance, 100%));
+      opacity: 0;
+    }
+  }
+  
+  /* Slide Out Class */
+  .slide-out {
+    animation-fill-mode: forwards;
+  }
+  
+  /* Specific Slide Out Direction Classes */
+  .slide-out-left {
+    animation-name: slideOut-left;
+  }
+  
+  .slide-out-right {
+    animation-name: slideOut-right;
+  }
+  
+  .slide-out-top {
+    animation-name: slideOut-top;
+  }
+  
+  .slide-out-bottom {
+    animation-name: slideOut-bottom;
+  }
+  

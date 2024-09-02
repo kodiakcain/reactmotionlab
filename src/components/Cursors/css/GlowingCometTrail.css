@@ -1,0 +1,13 @@
+.glowing-comet-container {
+  position: relative; /* Ensure child elements are positioned relative to this container */
+}
+
+.comet-trail {
+  position: absolute; /* Position comet trails relative to the container */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: transform 0.1s ease-out, opacity 0.2s ease-out;
+  z-index: 2000;
+}

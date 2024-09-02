@@ -1,0 +1,58 @@
+.button-wrapper {
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.button-background {
+    position: relative;
+    padding: 10px;
+    background-color: #2c3030;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.button-content {
+    position: relative;
+    z-index: 3;
+    color: white;
+}
+
+.neon-border {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, var(--neon-color-1), var(--neon-color-2), var(--neon-color-1), var(--neon-color-2));
+    background-size: 400% 400%;
+    z-index: 1;
+    pointer-events: none;
+    border-radius: 20px;
+
+   
+    box-shadow: 0 0 20px var(--neon-color-1), 0 0 40px var(--neon-color-2);
+
+   
+    animation: neonBorderMove 10s linear infinite;
+}
+
+
+@keyframes neonBorderMove {
+    0% {
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}

@@ -1,0 +1,26 @@
+.letter-drop {
+  display: inline-flex;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation-fill-mode: forwards;
+  animation-name: drop;
+  animation-timing-function: ease-in-out;
+}
+
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
