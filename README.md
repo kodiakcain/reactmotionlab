@@ -1,4 +1,4 @@
-# ReactMotionLab (v1.0.0)
+# ReactMotionLab (v1.1.0)
 
 ## Table of Contents
 - [Installation](#installation)
