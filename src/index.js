@@ -15,5 +15,6 @@ import LetterDrop from './components/LetterDrop';
 import NeonCursorLine from './components/Cursors/NeonCursorLine';
 import NeonBorder from './components/NeonBorder';
 import ShimmerButton from './components/ShimmerButton';
+import HoverShadow from './components/HoverShadow';
 
-export { FadeOut, FadeIn, SlideIn, SlideOut, Bounce, Rotate, Scale, Swing, Card, Cube, Morph, GlowingCometCursor, WaveText, LetterDrop, NeonCursorLine, NeonBorder, ShimmerButton };
+export { FadeOut, FadeIn, SlideIn, SlideOut, Bounce, Rotate, Scale, Swing, Card, Cube, Morph, GlowingCometCursor, WaveText, LetterDrop, NeonCursorLine, NeonBorder, ShimmerButton, HoverShadow };

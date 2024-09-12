@@ -1,6 +1,6 @@
 {
   "name": "reactmotionlab",
-  "version": "1.1.0",
+  "version": "1.11.0",
   "description": "CSS Animation Library for Creators!",
   "main": "dist/reactmotionlab.js",
   "scripts": {

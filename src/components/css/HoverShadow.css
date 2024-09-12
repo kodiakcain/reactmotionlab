@@ -1,0 +1,10 @@
+.hover-shadow-effect {
+    display: inline-block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .hover-shadow-effect:hover {
+    transform: scale(var(--scale-factor));
+    filter: drop-shadow(var(--shadow-offset-x) var(--shadow-offset-y) var(--shadow-blur) var(--shadow-color));
+  }
+  
