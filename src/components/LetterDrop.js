@@ -21,7 +21,7 @@ const LetterDrop = ({
             animationIterationCount: count,
           }}
         >
-          {letter === ' ' ? '\u00A0' : letter} {/* Handle spaces */}
+          {letter === ' ' ? '\u00A0' : letter}
         </span>
       ))}
     </div>
